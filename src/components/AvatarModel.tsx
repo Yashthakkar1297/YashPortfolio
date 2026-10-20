@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei';
 import { MathUtils, type Group, type Mesh, type MeshStandardMaterial } from 'three';
 import type { MotionValue } from 'framer-motion';
 
-export const AVATAR_URL = '/avatar.glb';
+export const AVATAR_URL = asset('/avatar.glb');
 export type Pointer = MutableRefObject<{ x: number; y: number }>;
 
 /** Cursor position across the window, -1 … 1. */
