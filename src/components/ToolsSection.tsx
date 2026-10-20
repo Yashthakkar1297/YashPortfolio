@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset';
 const TOOLS = [
   ['photoshop', 'Photoshop'],
   ['procreate', 'Procreate'],
