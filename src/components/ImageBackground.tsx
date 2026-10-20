@@ -25,7 +25,7 @@ export default function ImageBackground() {
   return (
     <div aria-hidden className="fixed inset-0 -z-10 bg-[#0e1011]">
       <img src={asset('/bg.jpg')} alt="" className="absolute inset-0 h-full w-full object-cover" draggable={false} />
-      <img ref={second} src="/bg2.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" style={{ opacity: 0 }} draggable={false} />
+      <img ref={second} src={asset('/bg2.jpg')} alt="" className="absolute inset-0 h-full w-full object-cover" style={{ opacity: 0 }} draggable={false} />
       <div className="absolute inset-0 bg-black/20" />
     </div>
   );
