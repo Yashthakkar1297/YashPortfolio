@@ -11,7 +11,7 @@ export default function RingCursor() {
     const el = document.createElement('div');
     Object.assign(el.style, { position: 'fixed', left: '0', top: '0', width: SIZE + 'px', height: SIZE + 'px', pointerEvents: 'none', zIndex: '99999', opacity: '0', transition: 'opacity .2s', willChange: 'transform' });
     const img = document.createElement('img');
-    img.src = '/ring-cursor.png'; img.alt = ''; img.draggable = false;
+    img.src = asset('/ring-cursor.png'); img.alt = ''; img.draggable = false;
     Object.assign(img.style, { width: '100%', height: '100%', display: 'block' });
     img.animate([{ transform: 'scale(.92)', opacity: 0.85 }, { transform: 'scale(1.06)', opacity: 1 }], { duration: 1400, direction: 'alternate', iterations: Infinity, easing: 'ease-in-out' });
     el.appendChild(img); document.body.appendChild(el);
