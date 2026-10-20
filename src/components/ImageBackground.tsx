@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset';
 import { useEffect, useRef } from 'react';
 
 /** Photos fixed behind the whole site. The first one is replaced by the second as you scroll down to Projects. */
