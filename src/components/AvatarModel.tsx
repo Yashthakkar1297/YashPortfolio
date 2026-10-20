@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset';
 import { useEffect, useMemo, useRef, type MutableRefObject } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
