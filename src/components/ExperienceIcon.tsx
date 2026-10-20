@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset';
 import { motion, type MotionValue } from 'framer-motion';
 
 interface Props { height: number; focus: MotionValue<number>; still: boolean; onOpen?: () => void; }
