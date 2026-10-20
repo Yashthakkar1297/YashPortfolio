@@ -5,7 +5,7 @@ export interface Profile {
 }
 export interface SkillCategory { name: string; items: string[]; }
 export interface Experience {
-  company: string; role: string; period: string; location: string; summary: string; highlights: string[]; }
+  company: string; role: string; period: string; location: string; summary: string; highlights: string[]; logo?: string; }
 export interface Project {
   id: string; title: string; subtitle: string; description: string; stack: string[];
   role: string; year: string; link: string; image: string; folder: string; aspect: number; highlight: boolean;
