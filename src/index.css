@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { background: #0b0d12; color: #e4e4e7; font-family: 'Kanit', system-ui, sans-serif; }
+section[id] { scroll-margin-top: 80px; }
+
+.hero-heading {
+  background: linear-gradient(180deg, #aab3c2 0%, #f1f5f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.btn-accent {
+  background: linear-gradient(90deg, #8b5cf6 0%, #d946ef 50%, #fb923c 100%);
+  color: #fff; font-weight: 500; transition: filter .2s, transform .2s;
+}
+.btn-accent:hover { filter: brightness(1.12); transform: translateY(-1px); }
+.dark-card { background: #FAFAFA; border: 1px solid rgba(0,0,0,.1); border-radius: 1.25rem; }
+.prose-safe { overflow-wrap: normal; word-break: normal; hyphens: none; }
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-track { display: flex; width: max-content; gap: 1.5rem; animation: marquee 45s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee { overflow-x: auto; scroll-snap-type: x mandatory; }
+  .marquee-track { animation: none; }
+  .marquee-track > * { scroll-snap-align: start; }
+  .marquee-dup { display: none; }
+}
+
+
