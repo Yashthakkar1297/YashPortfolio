@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset';
 import { useEffect, useRef } from 'react';
 import { useReducedMotion } from 'framer-motion';
 
