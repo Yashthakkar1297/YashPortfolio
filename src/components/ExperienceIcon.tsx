@@ -10,7 +10,7 @@ export default function ExperienceIcon({ onOpen, still }: Props) {
       role="button" tabIndex={0} aria-label="Open resume"
       onClick={onOpen} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen?.(); } }}
       whileHover={still ? undefined : { y: -8, scale: 1.04 }} transition={{ type: 'spring', stiffness: 220, damping: 20 }}>
-      <img src="/resume-folder.png" alt="" draggable={false} className="block h-auto w-full select-none drop-shadow-[0_18px_40px_rgba(60,110,255,0.35)]" />
+      <img src={asset('/resume-folder.png')} alt="" draggable={false} className="block h-auto w-full select-none drop-shadow-[0_18px_40px_rgba(60,110,255,0.35)]" />
     </motion.div>
   );
 }
