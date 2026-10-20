@@ -17,7 +17,7 @@ export default function ToolsSection() {
       <ul className="mx-auto flex max-w-5xl flex-nowrap items-center justify-center" style={{ gap: 'clamp(0.5rem, 2.6vw, 1.75rem)' }}>
         {TOOLS.map(([file, name]) => (
           <li key={file} style={{ width: 'clamp(1.8rem, 7.4vw, 3.4rem)' }}>
-            <img src={`/tools/${file}.png`} alt={name} title={name} draggable={false} loading="lazy" className="block h-auto w-full select-none" />
+            <img src={asset(`/tools/${file}.png`)} alt={name} title={name} draggable={false} loading="lazy" className="block h-auto w-full select-none" />
           </li>
         ))}
       </ul>
