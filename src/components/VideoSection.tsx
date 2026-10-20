@@ -23,7 +23,7 @@ export default function VideoSection() {
       <div className="mx-auto grid max-w-[70rem] grid-cols-1 gap-6 md:grid-cols-2">
         {VIDEOS.map((v, i) => (
           <div key={v.src} className="relative aspect-[3/2] overflow-hidden rounded-2xl [-webkit-mask-image:linear-gradient(to_bottom,#000_50%,transparent_100%)] [mask-image:linear-gradient(to_bottom,#000_50%,transparent_100%)]">
-            <video ref={(el) => { refs.current[i] = el; }} src={v.src} poster={v.poster} aria-label={v.label}
+            <video ref={(el) => { refs.current[i] = el; }} src={asset(v.src)} poster={asset(v.poster)} aria-label={v.label}
               muted loop playsInline preload="metadata" className="absolute inset-0 h-full w-full object-cover" />
           </div>
         ))}
