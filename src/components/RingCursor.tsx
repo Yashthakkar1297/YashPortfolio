@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset';
 import { useEffect } from 'react';
 
 // A small glowing hollow ring that replaces the mouse arrow.
